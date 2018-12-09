@@ -16,9 +16,10 @@ public class Main {
         while (i != 0) {
             date = new Date();
             System.out.println(date.toString());
-            FileWriter fileWriter = new FileWriter(file);
-            fileWriter.write(date.toString());
-            fileWriter.write(" -> created by Version 3");
+            FileWriter fileWriter = new FileWriter(file, true);
+            fileWriter.append(date.toString());
+            //fileWriter.write(date.toString());
+            fileWriter.append(" -> created by Version 4" + System.lineSeparator());
             fileWriter.close();
             TimeUnit.SECONDS.sleep(10);
 
