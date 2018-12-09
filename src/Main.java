@@ -12,7 +12,7 @@ public class Main {
         System.out.println(date.toString());
         FileWriter fileWriter = new FileWriter(file);
         fileWriter.write(date.toString());
-        fileWriter.write(" -> created by Version 1");
+        fileWriter.write(" -> created by Version 2");
         fileWriter.close();
     }
 
